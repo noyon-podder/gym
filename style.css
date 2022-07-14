@@ -104,6 +104,24 @@ a:hover {
   font-weight: 400;
   font-size: 16x;
   color: #fefefe;
+  transition: 0.3s;
+  position: relative;
+}
+.header-menu nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff2953;
+  transition: 0.3s;
+}
+.header-menu nav ul li a:hover::after {
+  width: 100%;
+}
+.header-menu nav ul li a:hover {
+  color: #ff2953;
 }
 .header-bottom {
   position: absolute;
@@ -144,4 +162,65 @@ a:hover {
   font-size: 16px;
   margin: 30px auto;
   line-height: 30px;
+}
+/* why us start  */
+section.why-us {
+  background: linear-gradient(
+      rgba(36, 33, 49, 0.9) 100%,
+      rgba(36, 33, 49, 0.7) 100%
+    ),
+    url("images/about.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  padding-top: 150px;
+  padding-bottom: 200px;
+  position: relative;
+  z-index: 100;
+  z-index: 10;
+}
+.section-heading {
+  text-align: center;
+  z-index: 100;
+}
+.section-heading h2 {
+  color: #fffefe;
+  font-size: 34px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.section-heading .devider {
+  width: 55px;
+  height: 3px;
+  background-color: #ff2953;
+  margin: 0 auto;
+}
+.why-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 70px;
+}
+.why-box .why-wrapper {
+  width: calc(100% / 4);
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.why-content {
+  margin-top: 30px;
+}
+.why-content h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.why-content p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400s;
 }
